@@ -1,66 +1,78 @@
-<DOCTYPE! html><!--this tells type of html document type i.e, html5-->
-  <!--html tag is root of html document-->
-  <html lang ="en-US"> 
-    <head>
-      <!--head gives meta information about html document-->
-      <title> <--lang attribute is added with html it meant to assist search engines and browsers. US there represents country code and en represents language of webpage-->
-        This is my webpage
-      </title>
-    </head>
-    <body><!--this defines  the body of html document this is visible area-->
-      
-      <h1>This is heading</h1>
-      <p>This is paragraph 1</p>
-      <p>this is paragraph 2</p>
-      <!--Paragraph always stars on a new line, and is usually a block of text, browser automatically add some white space before and after a paragraph-->
-      <!-- attributes are name/value pairs and gives addiional information about elemnts and always included in start tag-->
-      <a title ="this is link to w3 schools website" href="https://www.w3schools.com/html/html_basic.asp">This is link</a><br>
-      <img src="/" alt=" alternate text to an image it shows what to write if image doesn't load" width ="/" height="/"><!-- img is a self closing tag --><!-- height and width attribute give images in pixels-->
-      <!--there are two ways to specify url in the src attribute
+<DOCTYPE! html>
+      <!--this tells type of html document type i.e, html5-->
+      <!--html tag is root of html document-->
+      <html lang="en-US">
+
+      <head>
+            <!--head gives meta information about html document-->
+            <title>
+                  <--lang attribute is added with html it meant to assist search engines and browsers. US there
+                        represents country code and en represents language of webpage-->
+                        This is my webpage
+            </title>
+      </head>
+
+      <body style="font-size: 20px;">
+            <!--this defines  the body of html document this is visible area-->
+
+            <h1>This is heading</h1>
+            <p>This is paragraph 1</p>
+            <p>this is paragraph 2</p>
+            <!--Paragraph always stars on a new line, and is usually a block of text, browser automatically add some white space before and after a paragraph-->
+            <!-- attributes are name/value pairs and gives addiional information about elemnts and always included in start tag-->
+            <a title="this is link to w3 schools website" href="https://www.w3schools.com/html/html_basic.asp">This is
+                  link</a><br>
+            <img src="/" alt=" alternate text to an image it shows what to write if image doesn't load" width="/"
+                  height="/"><!-- img is a self closing tag -->
+            <!-- height and width attribute give images in pixels-->
+            <!--there are two ways to specify url in the src attribute
 1. Absolute Url- links to external image hosted on another website.
 2. Relative Url- links to an image that is hosted within the website, url does ot include domain name.
 It is almost always best to use relative URLs-->
-      <p style="color:red;">This is a red paragraph and an example of inline css which is not recomended</p>
-      <p title="I'm a tooltip">This is a paragraph</p><!-- title gives additonal information about element so when you bring cursor over that it shows up -->
-      <!-- keep name of attributes in lower case i.e HREF is bad href is good and always quote attribute values-->
-      <!-- we can use double quotes and single quotes around attribute values both are fine. However if value itself contains singe or double quote then we have to use other to encolse it-->
-     <!--below is example of html display, that how browser controls display--> 
-      <hr>
-      <p>
-This paragraph
-contains a lot of lines
-in the source code,
-but the browser 
-ignores it.
-</p>
+            <p style="color:red;">This is a red paragraph and an example of inline css which is not recomended</p>
+            <p title="I'm a tooltip">This is a paragraph</p>
+            <!-- title gives additonal information about element so when you bring cursor over that it shows up -->
+            <!-- keep name of attributes in lower case i.e HREF is bad href is good and always quote attribute values-->
+            <!-- we can use double quotes and single quotes around attribute values both are fine. However if value itself contains singe or double quote then we have to use other to encolse it-->
+            <!--below is example of html display, that how browser controls display-->
+            <hr>
+            <p>
+                  This paragraph
+                  contains a lot of lines
+                  in the source code,
+                  but the browser
+                  ignores it.
+            </p>
 
-<p>
-This paragraph
-contains      a lot of spaces
-in the source     code,
-but the    browser 
-ignores it.
-</p>
+            <p>
+                  This paragraph
+                  contains a lot of spaces
+                  in the source code,
+                  but the browser
+                  ignores it.
+            </p>
 
-<p>
-The number of lines in a paragraph depends on the size of the browser window. If you resize the browser window, the number of lines in this paragraph will change.
-</p>
-      <!--if you want to preserve both spaces and brakes then use <pre> tag, the text inside <pre> element is displayed in a fixed-width font(courier)-->
-      <pre><!--pre element defines preformatted text-->
+            <p>
+                  The number of lines in a paragraph depends on the size of the browser window. If you resize the
+                  browser window, the number of lines in this paragraph will change.
+            </p>
+            <!--if you want to preserve both spaces and brakes then use <pre> tag, the text inside <pre> element is displayed in a fixed-width font(courier)-->
+            <pre><!--pre element defines preformatted text-->
       My Bonnie lies over the ocean.
       My Bonnie lies over the sea.
       My Bonnie lies over the ocean.
       Oh, bring back bonnie to me.
       </pre>
-      <hr><!--hr is used for thematic break and an empty tag-->
-      <p>this is <br>paragraph</p>
-      <!--br tag is used for a line break without starting a new paragraph-->
-      <hr>
-      <!--HTML style attribute-->
-      <!--html style attribute has following syntax 
+            <hr>
+            <!--hr is used for thematic break and an empty tag-->
+            <p>this is <br>paragraph</p>
+            <!--br tag is used for a line break without starting a new paragraph-->
+            <hr>
+            <!--HTML style attribute-->
+            <!--html style attribute has following syntax 
 <tagname style="property:value;">
 -->
-      <pre>
+            <pre>
 Use the <strong>style</strong> attribute for styling HTML elements
 Use <strong>background-color</strong> for background color
 Use <strong>color</strong> for text colors
@@ -68,15 +80,14 @@ Use <strong>font-family</strong> for text fonts
 Use <strong>font-size</strong> for text sizes
 Use <strong>text-align</strong> for text alignment
 </pre>
-      <p style="font-size:160%;">This is 160% para</p>
-      <p style="text-align:center; font-size:160%;" 
-      >Centered paragraph</p>
-      <!-- we can't give same attribute more than once in an element hence we couldn't write syle two times.-->
-      <hr>
-      <h2>HTML Text Formatting</h2>
-      <!--Html contains several elements for defining text with special meaning-->
-      <!--HTML Formatting Elements-->
-      <pre>
+            <p style="font-size:160%;">This is 160% para</p>
+            <p style="text-align:center; font-size:160%;">Centered paragraph</p>
+            <!-- we can't give same attribute more than once in an element hence we couldn't write syle two times.-->
+            <hr>
+            <h2>HTML Text Formatting</h2>
+            <!--Html contains several elements for defining text with special meaning-->
+            <!--HTML Formatting Elements-->
+            <pre>
 <b>This bold the text without any importance</b>
 <strong>bold with extra Important text</strong>
 <i>Italic text</i>
@@ -90,7 +101,112 @@ text<sub>subscript</sub>halft a character below normal line.
 text<sup>superscript</sup>half a character above normal line.
 <!--both subscript and superscript is sometimes rendered in a smaller font-->
 </pre>
-      <hr>
-      
- </body>
-  </html>
+            <hr>
+            <h2>HTML Quotations</h2>
+            <!--Blockquote element defines a section that is quoted form another source.
+Browser usually indent <blockquote> elements.-->
+            <p>Browsers usually indent blockquote elements.</p>
+
+            <blockquote cite="http://www.worldwildlife.org/who/index.html">
+                  For nearly 60 years, WWF has been protecting the future of nature. The world's leading conservation
+                  organization, WWF works in 100 countries and is supported by more than one million members in the
+                  United States and close to five million globally.
+            </blockquote>
+            <!-- <q> is used for short quotation. Browser normally insert quotation marks around the quotation-->
+            <p>WHO goal is to: <q>To prevent spreading of disease in world</q></p>
+            <!--<abbr> tags define abbreviation or acronym like "Mr.", "Dr.". it can be useful information for browsers, translation systems and search-engines-->
+            <!--Use the global title attribute to show the description for the acronym/abbreviation-->
+            <p>The<abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+            <!--<address>tag defines the contact information, elemnts usually renders in italic and browser will always add a line break before and after the <address> element-->
+            <address>
+                  Alind Dwivedi<br>
+                  dwivedialind@gmail.com<br>
+                  98877*****<br>
+                  INDIA
+            </address>
+            <!--HTML <cite> for work title and A person's name is not the title of a work , elemnt usually renders in italic-->
+            <p><cite>Dark Matter</cite> by Blake Crouch is one of the best science fiction</p>
+            <!--<bdo> stands for Bi-Directional Override-->
+            <bdo dir="rtl">Codepen is worst website ever.</bdo>
+            <hr>
+            <h2>HTML Comment tag </h2>
+            <p>
+                  It is used for Comment, hide content temporarily and hide inline content
+            </p>
+            <hr>
+            <h2>HTML Colors</h2>
+            <pre>
+      1. style="background-color:Tomato;"
+      2. style="color:Yellow;"
+      3. style="border:2px solid Green;"
+</pre>
+            <h2>Color Values</h2>
+            <h3 style="background-color:rgb(200,150,40);">HTML RGB and RGBA colors</h3>
+            <p>
+                  rgb(red,green,blue),each parameter inside defines the intensity of the color with a value between 0
+                  and 255.
+                  This means 256*256*256 possible colors.<br>
+                  for black: rgb(0,0,0)/for white: rgb(255,255,255)<br>
+            </p>
+            <p style="background-color: rgb(140,140,140);">Shades of gray are often defined using equal values for all
+                  the three parameters</p>
+            <p style="background-color: rgba(255,99,180,0.5);">rgba have special parameter i.e, <em>alpha </em> which
+                  specified opacity of the Color<br>
+                  Range of alpha; 0.0(transparent) to 1.0(not transparent at all) </p>
+            <h3 style="background-color: #ff6347;">HEX Color values</h3>
+            <p>
+                  #rrggbb, where rr(red),gg(green),bb(blue) are hexadecimal values between 00 and ff being the highest
+                  and 00 lowest.<br>
+                  for black: #000000 and for white: #ffffff.<br>
+                  <i style="background-color: #a0a0a0;">Shades of gray are obtained using equal value for all three
+                        parameters.</i>
+            </p>
+            <h3 style="background-color: hsl(90,47%,50%);">HSL and HSLA color Values</h3>
+            <p> hsl stands for hue,saturation and lightness<br>
+                  Hue is a degree on the color wheel from 0 t 360. 0 is red and 120 is green and 240 is blue.<br>
+                  Saturation is a percentage value, 0% means shade of gray and 100% is the full color.<br>
+                  Lightness is also a percentage value which means how much light you want to give the color,0% is
+                  black, and 100% is white.</p>
+            <p style="background-color: hsl(0,0%,60%);">Shades of gray are defined by setting the hue and saturation to
+                  0, and adjusting the lightness from 0% to 100% </p>
+            <hr>
+            <h2><a href="https://www.w3schools.com/html/html_links.asp">HTML Links</a></h2>
+            <p> HTML Links are Hyperlinks.<br>
+                  <em>NOTE:A link does not have to be text.A link can be an image or any other HTML element!</em><br>
+                  1. href attribute is most important of a element, which indicates the link's destination.
+                  <ul>
+                        <li>An unvisited link is underlined and blue</li>
+                        <li>A visited link is underlined and purple</li>
+                        <li>An active link is underlined and red</li>
+                  </ul><br></p>
+            <h3>HTML Links- The target Attribute</h3>
+            <p>
+                  target attribute specifies where to open the linked document.
+                  <ul>
+                        <li> _self - Default. Opens the document in the same window/tab as it was clicked</li>
+                        <li> _blank - Opens the document in a new window or tab</li>
+                        <li>_parent - Opens the document in the parent frame</li>
+                        <li>_top - Opens the document in the full body of the window</li>
+                  </ul>
+            </p>
+            <ol>
+                  <li>Use an Image as a link:- Just put the img tag inside the a tag.e.g,<a href="default.asp">
+                              <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+                        </a> </li>
+                  <li>
+                        Link to an Email Address:-<a href="mailto:dwivedialind8@gmail.com">Send email</a>
+                  </li>
+                  <li>Button as a link:-you have to add some JavaScript code
+                        <button onclick="document.location='default.asp'">HTML Tutorial</button>
+                  </li>
+                  <li>
+                        Link Titles:- <a href="https://www.w3schools.com/html/"
+                              title="Go to W3Schools HTML section">HTML Tutorial</a>
+                  </li>
+            </ol>
+
+
+
+      </body>
+
+      </html>
