@@ -1,0 +1,96 @@
+<DOCTYPE! html><!--this tells type of html document type i.e, html5-->
+  <!--html tag is root of html document-->
+  <html lang ="en-US"> 
+    <head>
+      <!--head gives meta information about html document-->
+      <title> <--lang attribute is added with html it meant to assist search engines and browsers. US there represents country code and en represents language of webpage-->
+        This is my webpage
+      </title>
+    </head>
+    <body><!--this defines  the body of html document this is visible area-->
+      
+      <h1>This is heading</h1>
+      <p>This is paragraph 1</p>
+      <p>this is paragraph 2</p>
+      <!--Paragraph always stars on a new line, and is usually a block of text, browser automatically add some white space before and after a paragraph-->
+      <!-- attributes are name/value pairs and gives addiional information about elemnts and always included in start tag-->
+      <a title ="this is link to w3 schools website" href="https://www.w3schools.com/html/html_basic.asp">This is link</a><br>
+      <img src="/" alt=" alternate text to an image it shows what to write if image doesn't load" width ="/" height="/"><!-- img is a self closing tag --><!-- height and width attribute give images in pixels-->
+      <!--there are two ways to specify url in the src attribute
+1. Absolute Url- links to external image hosted on another website.
+2. Relative Url- links to an image that is hosted within the website, url does ot include domain name.
+It is almost always best to use relative URLs-->
+      <p style="color:red;">This is a red paragraph and an example of inline css which is not recomended</p>
+      <p title="I'm a tooltip">This is a paragraph</p><!-- title gives additonal information about element so when you bring cursor over that it shows up -->
+      <!-- keep name of attributes in lower case i.e HREF is bad href is good and always quote attribute values-->
+      <!-- we can use double quotes and single quotes around attribute values both are fine. However if value itself contains singe or double quote then we have to use other to encolse it-->
+     <!--below is example of html display, that how browser controls display--> 
+      <hr>
+      <p>
+This paragraph
+contains a lot of lines
+in the source code,
+but the browser 
+ignores it.
+</p>
+
+<p>
+This paragraph
+contains      a lot of spaces
+in the source     code,
+but the    browser 
+ignores it.
+</p>
+
+<p>
+The number of lines in a paragraph depends on the size of the browser window. If you resize the browser window, the number of lines in this paragraph will change.
+</p>
+      <!--if you want to preserve both spaces and brakes then use <pre> tag, the text inside <pre> element is displayed in a fixed-width font(courier)-->
+      <pre><!--pre element defines preformatted text-->
+      My Bonnie lies over the ocean.
+      My Bonnie lies over the sea.
+      My Bonnie lies over the ocean.
+      Oh, bring back bonnie to me.
+      </pre>
+      <hr><!--hr is used for thematic break and an empty tag-->
+      <p>this is <br>paragraph</p>
+      <!--br tag is used for a line break without starting a new paragraph-->
+      <hr>
+      <!--HTML style attribute-->
+      <!--html style attribute has following syntax 
+<tagname style="property:value;">
+-->
+      <pre>
+Use the <strong>style</strong> attribute for styling HTML elements
+Use <strong>background-color</strong> for background color
+Use <strong>color</strong> for text colors
+Use <strong>font-family</strong> for text fonts
+Use <strong>font-size</strong> for text sizes
+Use <strong>text-align</strong> for text alignment
+</pre>
+      <p style="font-size:160%;">This is 160% para</p>
+      <p style="text-align:center; font-size:160%;" 
+      >Centered paragraph</p>
+      <!-- we can't give same attribute more than once in an element hence we couldn't write syle two times.-->
+      <hr>
+      <h2>HTML Text Formatting</h2>
+      <!--Html contains several elements for defining text with special meaning-->
+      <!--HTML Formatting Elements-->
+      <pre>
+<b>This bold the text without any importance</b>
+<strong>bold with extra Important text</strong>
+<i>Italic text</i>
+<!--Tip: The <i> tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.-->
+<em>Screen reader will pronounce the words in with an emphasis, using verbal stress</em>
+<mark>Marked text</mark>
+<small>Smaller</small> text
+<del>Deleted text</del>
+<ins>browser automatically underline Inserted text</ins>
+text<sub>subscript</sub>halft a character below normal line.
+text<sup>superscript</sup>half a character above normal line.
+<!--both subscript and superscript is sometimes rendered in a smaller font-->
+</pre>
+      <hr>
+      
+ </body>
+  </html>
