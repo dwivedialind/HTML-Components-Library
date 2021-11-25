@@ -12,7 +12,7 @@
             </title>
       </head>
 
-      <body style="font-size: 20px;">
+      <body style="font-size: 25px;">
             <!--this defines  the body of html document this is visible area-->
 
             <h1>This is heading</h1>
@@ -134,7 +134,7 @@ Browser usually indent <blockquote> elements.-->
                   It is used for Comment, hide content temporarily and hide inline content
             </p>
             <hr>
-            <h2>HTML Colors</h2>
+            <h2 id="html-colors">HTML Colors</h2>
             <pre>
       1. style="background-color:Tomato;"
       2. style="color:Yellow;"
@@ -174,11 +174,16 @@ Browser usually indent <blockquote> elements.-->
             <p> HTML Links are Hyperlinks.<br>
                   <em>NOTE:A link does not have to be text.A link can be an image or any other HTML element!</em><br>
                   1. href attribute is most important of a element, which indicates the link's destination.
+                  <h3>HTML links-Different colos</h3>
                   <ul>
                         <li>An unvisited link is underlined and blue</li>
                         <li>A visited link is underlined and purple</li>
                         <li>An active link is underlined and red</li>
-                  </ul><br></p>
+                        <p>a link can also be styled using css
+
+                        </p>
+                  </ul><br>
+            </p>
             <h3>HTML Links- The target Attribute</h3>
             <p>
                   target attribute specifies where to open the linked document.
@@ -204,9 +209,105 @@ Browser usually indent <blockquote> elements.-->
                               title="Go to W3Schools HTML section">HTML Tutorial</a>
                   </li>
             </ol>
+            <h3>HTML Links - Create Bookmarks</h3>
+            <ul>
+                  <li>Bookmarks help readers to help jump specific parts of a web page</li>
+                  <li>Bookmarks can be useful if a web pages is very long.</li>
+            </ul>
+            <p>First,use the id attribute to create a bookmark:<br>
+                  <a href="#html-colors">Jump to HTML colors</a></p>
+            <ul>
+                  <li>Use the <b>id</b> attribute (id="value") to define bookmarks in a page.</li>
+                  <li>Use the <b>href</b> attribute (href="#value") to link to the bookmark</li>
+            </ul>
+            <hr>
+            <h2>HTML Images</h2>
+            <!--Images improve design and appearance of the web page-->
+            <a href="https://www.dreamstime.com/stock-photo-sunrise-sunset-love-romance-birds-concept-flock-flying-heart-formation-behind-them-image95869871"
+                  target="_blank"><img
+                        src="https://thumbs.dreamstime.com/z/sunrise-sunset-love-romance-birds-concept-flock-flying-heart-formation-behind-them-95869871.jpg"
+                        alt="bird in sunlight" style="width:250ox;height: 400px;">
+
+            </a>
+            <p>img tag is empty, it contains attributes only, and does not have a closing tag.<br>
+                  <ul>
+                        <li>src-Specifies the path of the image</li>
+                        <li>alt-Specifies an alternate text for the image</li>
+                  </ul>
+            </p>
+            <em><strong>Tip:</strong> A screen reader is a software program that reads the HTML code, and allows the
+                  user to "listen" to the content. Screen readers are useful for people who are visually impaired or
+                  learning disabled.</em>
+            <!--We can also use the width and height as attributes as in
+<img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+-->
+            <em>The widht, height and style attributes are all valid in HTML.However use the style attribute. It
+                  prevents styles sheets from changing the size of images.</em>
 
 
+            <img src="love-lioness-cub-kruger-np-600w-1078246298.webp" alt="Lions pride"
+                  style="height:300px; width:400px;padding: 2rem;">
+            <p>HTML allows Animated GIFs<br>
+                  <h3>Image Floating</h3>
+                  <p>Use the CSS float property to let the image float to the right or to the left of a text.<img
+                              src="smiley-6323863_960_720.webp" alt="Smiley"
+                              style="height:100px;width:200px;float:right;"></p>
+            </p>
+            <em> Loading large images takes time, and can slow down your web page. Use images carefully.</em>
+            <hr>
+            <h3>HTML Image Maps</h3>
+            <p>The HTML <b>map</b> tag defines an image map. An image map is an image with clickable areas. The areas
+                  are defined with one or more <b>area </b>tags.</p>
+            <p>
+                  <h4>How Does it Work?</h4>
+                  The idea behind an image map is that you should be able to perform different actions depending on
+                  where in the image you click.
 
+                  To create an image map you need an image, and some HTML code that describes the clickable areas.
+            </p>
+            <p>The image is inserted using the img tag. The only difference from other images is that you must add a
+                  <b>usemap </b>attribute<br>
+                  img src="workplace.jpg" alt="Workplace" usemap="#workmap"</p>
+            <h3>Create Image Map</h3>
+            <pre>
+
+                  map name="workmap"
+                  A clickable area is defined using an <b>area</b> element.
+                  <b>Shape</b> You must define the shape of the clickable area, and you can choose one of these values:
+                  </pre>
+                   <ul>
+                        <li> rect - defines a rectangular region</li>
+                        <li> circle - defines a circular region </li>
+                        <li> poly - defines a plygonal region</li>
+                        <li> default - defines the entire region </li>
+                  </ul>
+                  <a href="https://www.w3schools.com/html/html_images_imagemap.asp" target="_blank">Read it from here</a>
+           <p> attributes for area tag(self closing tag) are:
+                 <ul>
+                       <li>shape="rect"</li>
+                       <li>coords=" 34px from the left margin, 44px from the top margin, 270px from the left margin, 350px from the top margin </li>
+                       <li>href="computer.html"</li>
+                       <li>alt="Computer"</li>
+                 </ul>
+                 <ul>
+                       <li>shape="circle"</li>
+                       <li>coord="coordinates of centre of circle, radius"</li>
+                       <li>href="Coffee.html"</li>
+                 </ul>
+           </p>
+           <em>A clickable area can also trigger a Javascript function
+                 Add a click event to the <b>area</b> element to execute a Javascript function.
+           </em>
+           <pre>
+            |img src="workplace.jpg" alt="Workplace" usemap="#workmap"|
+
+           | map name="workmap"|
+              |area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm"|
+              |area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm"|
+              |area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm"|
+            |/map|
+            
+           </pre>
       </body>
 
       </html>
