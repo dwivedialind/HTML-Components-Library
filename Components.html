@@ -6,15 +6,16 @@
       <head>
             <!--head gives meta information about html document-->
             <title>
-                  <--lang attribute is added with html it meant to assist search engines and browsers. US there
-                        represents country code and en represents language of webpage-->
+                  
                         This is my webpage
             </title>
+            <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
       </head>
 
       <body style="font-size: 25px;">
             <!--this defines  the body of html document this is visible area-->
-
+<!--lang attribute is added with html it meant to assist search engines and browsers. US there
+                        represents country code and en represents language of webpage-->
             <h1>This is heading</h1>
             <p>This is paragraph 1</p>
             <p>this is paragraph 2</p>
@@ -275,30 +276,31 @@ Browser usually indent <blockquote> elements.-->
                   A clickable area is defined using an <b>area</b> element.
                   <b>Shape</b> You must define the shape of the clickable area, and you can choose one of these values:
                   </pre>
-                   <ul>
-                        <li> rect - defines a rectangular region</li>
-                        <li> circle - defines a circular region </li>
-                        <li> poly - defines a plygonal region</li>
-                        <li> default - defines the entire region </li>
+            <ul>
+                  <li> rect - defines a rectangular region</li>
+                  <li> circle - defines a circular region </li>
+                  <li> poly - defines a plygonal region</li>
+                  <li> default - defines the entire region </li>
+            </ul>
+            <a href="https://www.w3schools.com/html/html_images_imagemap.asp" target="_blank">Read it from here</a>
+            <p> attributes for area tag(self closing tag) are:
+                  <ul>
+                        <li>shape="rect"</li>
+                        <li>coords=" 34px from the left margin, 44px from the top margin, 270px from the left margin,
+                              350px from the top margin </li>
+                        <li>href="computer.html"</li>
+                        <li>alt="Computer"</li>
                   </ul>
-                  <a href="https://www.w3schools.com/html/html_images_imagemap.asp" target="_blank">Read it from here</a>
-           <p> attributes for area tag(self closing tag) are:
-                 <ul>
-                       <li>shape="rect"</li>
-                       <li>coords=" 34px from the left margin, 44px from the top margin, 270px from the left margin, 350px from the top margin </li>
-                       <li>href="computer.html"</li>
-                       <li>alt="Computer"</li>
-                 </ul>
-                 <ul>
-                       <li>shape="circle"</li>
-                       <li>coord="coordinates of centre of circle, radius"</li>
-                       <li>href="Coffee.html"</li>
-                 </ul>
-           </p>
-           <em>A clickable area can also trigger a Javascript function
-                 Add a <b>click</b> event to the <b>area</b> element to execute a Javascript function.
-           </em>
-           <pre>
+                  <ul>
+                        <li>shape="circle"</li>
+                        <li>coord="coordinates of centre of circle, radius"</li>
+                        <li>href="Coffee.html"</li>
+                  </ul>
+            </p>
+            <em>A clickable area can also trigger a Javascript function
+                  Add a <b>click</b> event to the <b>area</b> element to execute a Javascript function.
+            </em>
+            <pre>
             |img src="workplace.jpg" alt="Workplace" usemap="#workmap"|
 
            | map name="workmap"|
@@ -308,6 +310,89 @@ Browser usually indent <blockquote> elements.-->
             |/map|
             
            </pre>
+            <a href="https://www.w3schools.com/html/html_images_background.asp" target="_blank">
+                  <h3>HTML Background Images </h3>
+            </a>
+            <p>
+                  A background image can be specified for almost any HTML element.<br>
+                  <h4>CSS Background Properties used:</h4>
+                  <ul>
+                        <li>style="background-image:url('img_girl.jpg');"</li>
+                        <p>We can also specify background image in the |style| element, in the |head| section.<br>
+                              <pre>
+                        |style|
+                        div{
+                              background-image:url('img_girl.jpg');
+                        }
+                        |/style|
+                  </pre>
+                        </p>
+                        <em>If background image is smaller than the element, the image will repeat itself, horizontally
+                              and vertically, until it reaches the end of the element.</em>
+                        <li>To avoid image from repeating itself<br>background-repeat:no-repeat;</li>
+                        <li>To want the background image to cover the entire element:<br>
+                              background-size:cover;<br>
+                              And to make sure the entire element is always covered, set
+                              th<br>background-attachement:fixed;<br>
+                              This way, the background image will cover the entire element, with no stretching (the
+                              image will keep its original proportions):</li>
+                        <li>If you want the background image to stretch to fit the entire element<br>
+                              background-size: 100% 100%<br>
+                              Resizing the browser window, and you will see that the image will stretch, but always
+                              cover the entire element</li>
+                  </ul>
+            </p>
+            <a href="https://www.w3schools.com/html/html_images_picture.asp" target="_blank">
+                  <h3>HTML |picture| element</h3>
+            </a>
+            <p>|picture| element allows to display different pictures for different devices or screen sizes.<br>The
+                  |picture| element contains one or more |source| elements, each referring to different images through
+                  the<b> srcset</b> attribute.This way browser can choose the image that best fits the current view
+                  and/or device.<br>Each |source| element has a <b>media </b>attribute that defines when the image is
+                  the most suitable.</p>
+            <pre>
+            |picture|
+                  |source media="(min-width: 650px)" srcset="img_food.jpg"|
+                  |source media="(min-width: 465px)" srcset="img_car.jpg"|
+                  |img src="img_girl.jpg"|
+                |/picture|
+               
+           </pre> <em><strong>Always specify an |img| element as the last child element of the |picture| element. The
+                        |img| element is used by browsers that do not support the |picture| element, or if none of the
+                        |source| tags match.</strong></em>
+            <h4>When to use the Picture Element:</h4>
+            <p>There are two main purposes for the |picture| element:
+                  <ol>
+                        <li>
+                              Bandwith:<br>
+                              If you have a small screen or device, it is not necessary to load a large image file. The
+                              browser will use the first |source| element with matching attribute values, and ignore any
+                              of the following elements.
+                        </li>
+                        <li>Format Support:<br>
+                              Some browsers or devices may not support all image formats. By using the <picture>
+                                    element, you can add images of all formats, and the browser will use the first
+                                    format it recognizes, and ignore any of the following elements.
+                                    <pre>
+                                          |picture|
+                                          |source srcset="img_avatar.png"|
+                                          |source srcset="img_girl.jpg"|
+                                          |img src="img_beatles.gif" alt="Beatles" style="width:auto;"|
+                                          |/picture|
+                                                </pre>
+                        </li>
+                  </ol>
+            </p>
+            <picture>
+                  <source media="(min-width:800px)" srcset="markus-spiske-veaOv2MT6Y4-unsplash.jpg">
+                  <source media="(min-width:400px)" srcset="sleepy-zhao-K3nKQXfLSh0-unsplash.jpg">
+                  <img src="love-lioness-cub-kruger-np-600w-1078246298.webp">
+            </picture>
+            <hr>
+<h2>HTML Favicon</h2>
+<p>A favicon is a small image displayed next to the page title in the browser tap. You can use any image you like or can create your own favicon on sites like <a href="https://www.favicon.cc/">https://favicon.cc</a></p>
+
+
       </body>
 
       </html>
