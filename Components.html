@@ -6,15 +6,32 @@
       <head>
             <!--head gives meta information about html document-->
             <title>
-                  
-                        This is my webpage
+
+                  This is my webpage
             </title>
             <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+            <style>
+                  table,
+                  th,
+                  td {
+                        border: 1px solid white;
+                        font-size: 25px;
+                        border-collapse: collapse;
+                        border-radius: 10px;
+
+                  }
+
+                  th,
+                  td {
+                        background-color: aqua;
+                        text-align: center;
+                  }
+            </style>
       </head>
 
       <body style="font-size: 25px;">
             <!--this defines  the body of html document this is visible area-->
-<!--lang attribute is added with html it meant to assist search engines and browsers. US there
+            <!--lang attribute is added with html it meant to assist search engines and browsers. US there
                         represents country code and en represents language of webpage-->
             <h1>This is heading</h1>
             <p>This is paragraph 1</p>
@@ -389,10 +406,120 @@ Browser usually indent <blockquote> elements.-->
                   <img src="love-lioness-cub-kruger-np-600w-1078246298.webp">
             </picture>
             <hr>
-<h2>HTML Favicon</h2>
-<p>A favicon is a small image displayed next to the page title in the browser tap. You can use any image you like or can create your own favicon on sites like <a href="https://www.favicon.cc/">https://favicon.cc</a></p>
-
-
+            <h2>HTML Favicon</h2>
+            <p>A favicon is a small image displayed next to the page title in the browser tap. You can use any image you
+                  like or can create your own favicon on sites like <a
+                        href="https://www.favicon.cc/">https://favicon.cc</a></p>
+            <hr>
+            <h2>HTML Tables</h2>
+            <table>
+                  <caption>This is an examples</caption>
+                  <tr>
+                        <th>Company</th>
+                        <th>Contact</th>
+                        <th>Country</th>
+                  </tr>
+                  <tr>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                  </tr>
+                  <tr>
+                        <td>Centro comercial Moctezuma</td>
+                        <td>Francisco Chang</td>
+                        <td>Mexico</td>
+                  </tr>
+            </table>
+            <ul>
+                  <li><strong>td </strong>stands for table data. content of the table cell.</li>
+                  <li><strong>tr </strong>stands for table row. You can have as may rows as you like in a table, just
+                        make sure the number of cells are same in a row.</li>
+                  <li><strong>th </strong>stands for table header. The text elements are bold and centred.</li>
+            </ul>
+            <ul>
+                  <li>
+                        <strong>|thead|</strong> Groups the header content in a table.
+                  </li>
+                  <li>
+                        <strong>|tbody|</strong> Groups the body content in a table.
+                  </li>
+                  <li>
+                        <strong>|tfoot|</strong> Groups the footer content in a table.
+                  </li>
+            </ul>
+            <h3>HTML Table Borders</h3>
+            <a href="https://www.w3schools.com/html/html_table_borders.asp">Read it from here</a>
+            <a href="https://www.w3schools.com/html/html_table_sizes.asp">
+                  <h3>HTML Table Sizes</h3>
+            </a>
+            <p>HTML tables can have different sizes for each column, row or the entire table.<br>Use the <strong>style
+                  </strong>attribute with the <b>width </b>or <b>height </b>properties to specify the size of a
+                  table,row or column.</p>
+            <h4>HTML Table Width</h4>
+            <table style="width:100%;">
+                  <tr>
+                        <th style="width:70%;">Firstname</th>
+                        <th>Lastname</th>
+                        <th>Age</th>
+                  </tr>
+                  <tr style="height:200px;">
+                        <td>Jill</td>
+                        <td>Smith</td>
+                        <td>50</td>
+                  </tr>
+                  <tr>
+                        <td>Eve</td>
+                        <td>Jackson</td>
+                        <td>94</td>
+                  </tr>
+            </table>
+            <em>Using a percentage as the size unit for a width means how wide will this element be compared to its
+                  parent element, which in the case is the <strong> |body|</strong> element. </em>
+            <h4>Vertical Table Headers</h4>
+            <table>
+                  <tr>
+                        <th colspan="2">Firstname</th>
+                        <td>Jill</td>
+                        <td>Eve</td>
+                  </tr>
+                  <tr>
+                        <th>Lastname</th>
+                        <td>Smith</td>
+                        <td>Jackson</td>
+                  </tr>
+                  <tr>
+                        <th>Age</th>
+                        <td>94</td>
+                        <td>50</td>
+                  </tr>
+            </table>
+            <p>By default, table headers are bold and centred:<br>
+                  text-align: center;<br>
+                  colspan attribute can be used to spans header over two or more columns.<br>
+                  <strong>|caption| </strong>tag serves as a heading for the entire table.
+                  <em><strong>|caption| </strong>tag should be inserted immediately after the <strong>|table| </strong>tag.</em>
+            </p>
+            <a href="index.html" target="_blank"><em><strong>HTML table padding and spacing. Done it from here.</strong></em></a>
+            <hr>
+            <a href="https://www.w3schools.com/html/html_lists.asp"><h2>HTML Lists</h2></a>
+            <h4>Types of Lists:</h4>
+            <ul>
+                  <li>HTML ordered Lists</li>
+                  <li>HTML unordered Lists</li>
+                  <li>HTML Description Lists</li>
+            </ul>
+            <dl>
+                  <dt>Coffee</dt>
+                  <dd>- black hot drink</dd>
+                  <dt>Milk</dt>
+                  <dd>- white cold drink</dd>
+            </dl>
+            <dl>
+                  <dt>|dt|</dt>
+                  <dd>-Defines a term in description list</dd>
+                  <dt>|dd|</dt>
+                  <dd>-Describes the term in a description list</dd>
+            </dl>
       </body>
 
       </html>

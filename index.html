@@ -1,14 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>This is my document</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+
+            border-spacing: 30px;
+        }
+
+        th,
+        td {
+            padding-top: 20px;
+            padding-bottom: 40px;
+            padding-left: 10px;
+            padding-right: 20px;
+        }
+    </style>
 </head>
-<body>
+
+<body style="font-size:25px;">
     <p>for using favicon file should be saved with index.html and inside images folder.</p>
-    
+    <a href="https://www.w3schools.com/html/html_table_padding_spacing.asp">
+        <h3>HTML Table Padding & Spacing</h3>
+    </a>
+    <img src="/images/HTml-table-padding-and-spacing.jpg">
+    <h4>HTML Table- Cell Padding</h4>
+    <p>
+        Cell padding is the space between the cell edges and the cell content.<br>By default the padding is set to
+        0.<br>To add padding on table cells, use the css <strong>padding </strong>property.
+    </p>
+    <table>
+        <tr>
+            <th colspan="2">Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Alind</td>
+            <td>Dwivedi</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Aniket</td>
+            <td>Bilthare</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>Mridul</td>
+            <td>Pathak</td>
+            <td>80</td>
+        </tr>
+    </table>
+    <h4>HTML Table-Cell Spacing</h4>
+    <p>
+        Cell spacing is the space between each cell.<br>
+        By default the space is set to 2 pixels.<br>
+        Use the CSS <strong>border-spacing </strong>property on the <strong>table</strong> element.
+    </p>
+    <a href="https://www.w3schools.com/html/html_table_colspan_rowspan.asp" target="_blank">
+        <h3>HTML Table Colspan & Rowspan</h3>
+    </a>
+    <ul>
+        <li>colspan="2"</li>
+        <li>rowspan="2"</li>
+    </ul>
+    <a href="https://www.w3schools.com/html/html_table_styling.asp" target="_blank">
+        <h3>HTML Table Styling</h3>
+    </a>
+    <p>Zebra Stripes<br>Vertical Zebra Stripes<br>Combine Vertical and Horizontal Zebra Stripes<br>
+        Horizontal Dividers<br>Hoverable Table</p>
+    <a href="https://www.w3schools.com/html/html_table_colgroup.asp" target="_blank">
+        <h3>HTML Table Colgroup</h3>
+    </a>
+    <img src="/images/HTML Table ColGroup.jpg" alt="HTML Table Colgroup"><br>
+<img src="/images/Note on colgroup.jpg" alt="Note">
+<h4>Legal CSS Properties</h4>
+<ul>
+    <li>width</li>
+    <li>visibility</li>
+    <li>background</li>
+    <li>border</li>
+</ul>
+<em>All other CSS properties will have no effect on your tables.</em>
 </body>
+
 </html>
