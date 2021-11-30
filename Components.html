@@ -497,11 +497,15 @@ Browser usually indent <blockquote> elements.-->
                   text-align: center;<br>
                   colspan attribute can be used to spans header over two or more columns.<br>
                   <strong>|caption| </strong>tag serves as a heading for the entire table.
-                  <em><strong>|caption| </strong>tag should be inserted immediately after the <strong>|table| </strong>tag.</em>
+                  <em><strong>|caption| </strong>tag should be inserted immediately after the <strong>|table|
+                        </strong>tag.</em>
             </p>
-            <a href="index.html" target="_blank"><em><strong>HTML table padding and spacing. Done it from here.</strong></em></a>
+            <a href="index.html" target="_blank"><em><strong>HTML table padding and spacing. Done it from
+                              here.</strong></em></a>
             <hr>
-            <a href="https://www.w3schools.com/html/html_lists.asp"><h2>HTML Lists</h2></a>
+            <a href="https://www.w3schools.com/html/html_lists.asp">
+                  <h2>HTML Lists</h2>
+            </a>
             <h4>Types of Lists:</h4>
             <ul>
                   <li>HTML ordered Lists</li>
@@ -520,6 +524,295 @@ Browser usually indent <blockquote> elements.-->
                   <dt>|dd|</dt>
                   <dd>-Describes the term in a description list</dd>
             </dl>
+
+            <a href="https://www.w3schools.com/html/html_lists_unordered.asp">
+                  <h3>Unordered HTML List</h3>
+            </a>
+            <h4>Choose List Item Marker</h4>
+            <ul style="list-style-type: none;">
+                  <li>none- The list items will not be marked</li>
+            </ul>
+            <ul style="list-style-type: disc;">
+                  <li>disc- Sets the list item marker to a bullet(default)</li>
+            </ul>
+            <ul style="list-style-type: circle;">
+                  <li>circle- Sets the list item marker to a circle</li>
+            </ul>
+            <ul style="list-style-type:square;">
+                  <li>square- Sets the list item marker to a square</li>
+            </ul>
+            <h4>Nested HTML Elements</h4>
+            <ul>
+                  <li>Coffee</li>
+                  <li>Tea
+                        <ul>
+                              <li>Black Tea</li>
+                              <li>Green Tea</li>
+                        </ul>
+                  </li>
+                  <li>Milk</li>
+            </ul>
+            <em><strong>A list item(|li|) can contain a new list, and other HTML elements, like images and links, etc.
+                  </strong></em>
+
+            <h3>Horizontal List with CSS</h3>
+            <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_menu" target="_blank">
+                  <p>see it in source, if it works or on unordered list link</p>
+            </a>
+            <a href="https://www.w3schools.com/html/html_lists_ordered.asp" target="_blank">
+                  <h3>HTML Ordered Lists</h3>
+            </a>
+
+            <ol type="1">
+                  <li>type="1" - The list items will be numbered with numbers (default)</li>
+            </ol>
+            <ol type="A">
+                  <li>type="A" - The list items will be numbered with uppercase letters</li>
+            </ol>
+            <ol type="a">
+                  <li>type="a" - The list items will be numbered with lowercase letters</li>
+            </ol>
+            <ol type="I">
+                  <li>type="I" - The list items will be numbered with uppercase roman numbers</li>
+            </ol>
+            <ol type="i">
+                  <li>type="i" - The list items will be numbered with lowercase roman letters</li>
+            </ol>
+            <h4>Control List Counting</h4>
+            <p>By default, an ordered list will start counting from 1. If you want to start a counting from a specified
+                  number, you can use the <strong>start </strong> attribute</p>
+            <ol start="50">
+                  <li>Coffee</li>
+                  <li>Tea</li>
+                  <li>Milk</li>
+            </ol>
+            <h4>Nested List Elements</h4>
+            <ol>
+                  <li>Coffee</li>
+                  <li>Tea
+                        <ol>
+                              <li>Black tea</li>
+                              <li>Green tea</li>
+                        </ol>
+                  </li>
+                  <li>Milk</li>
+            </ol>
+            <a href="https://www.w3schools.com/html/html_lists_other.asp" target="_blank">
+                  <h3>HTML Description Lists</h3>
+            </a>
+            <ul>
+                  <li>Use the HTML |dl| element to define a description list</li>
+                  <li>Use the HTML |dt| element to define a description term</li>
+                  <li>Use the HTML |dd| element to describe the term in a description list</li>
+            </ul>
+            <hr>
+            <a href="https://www.w3schools.com/html/html_blocks.asp" target="_blank">
+                  <h2>HTML Block and Inline Elements</h2>
+            </a>
+            <p>Every HTML element has a default display value, depending on what type of element it is.<br>
+                  There are tow display values: block and inline
+                  <dl>
+                        <dt>Block-level Elements</dt>
+                        <dd> always starts on a new line.</dd>
+                        <dd> always takes up full width available(stretches out to the left and right as far as it can).
+                        </dd>
+                        <dd> has a top and a bottom margin</dd>
+                  </dl>
+                  <img src="/images/list of block level elements.jpg" alt="list of block level elements">
+                  <dl>
+                        <dt>Inline-level Elements</dt>
+                        <dd> does not starts on a new line.</dd>
+                        <dd> only takes up as much width as necessary.</dd>
+                        <dd> does not have a top and a bottom margin</dd>
+                  </dl>
+                  <img src="/images/list of inline elements.jpg" alt="list of block level elements">
+            </p>
+            <h3>The <strong>|div|</strong> Element</h3>
+            <ul style="list-style-type: none;">
+                  <li>The |div| element is often used as a container for other HTML elements.</li>
+                  <li>has no required attribute, but <strong>style</strong>, <strong>class</strong> and
+                        <strong>id</strong> are common.</li>
+            </ul>
+            <div style="background-color:black;color:white;padding:20px;">
+                  <h2>London</h2>
+                  <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a
+                        metropolitan area of over 13 million inhabitants.</p>
+            </div>
+            <h3>The <strong>|span|</strong> Element</h3>
+            <ul style="list-style-type: none;">
+                  <li>The |span| element is used as an inline container used to mark up a part of a text, or a part of a
+                        document.</li>
+                  <li>has no required attribute, but <strong>style</strong>, <strong>class</strong> and
+                        <strong>id</strong> are common.</li>
+            </ul>
+            <p>My mother has <span style="color:blue;font-weight:bold">blue</span> eyes and my father has <span
+                        style="color:darkolivegreen;font-weight:bold">dark green</span> eyes.</p>
+            <hr>
+            <!--HTML Class Attribute-->
+            <a href="https://www.w3schools.com/html/html_classes.asp" target="_blank">
+                  <h2>HTML Class Attribute</h2>
+            </a>
+            <p>The HTML <strong>class</strong> attribute is used to specifty a class for an HTML element.<br>
+                  Multiple HTML elements can share the same class.<br>
+                  The class attribute is often used to point to a class name in a style sheet. It can also be used by a
+                  JavaScript to access and manipulate elements with the specific class name.
+            </p>
+            <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_classes_capitals" target="_blank">See an
+                  Example.</a>
+            <pre style="color: red; background-color: bisque;">
+                        Tip: The <strong>class</strong> attribute can be used on any HTML element.
+                        Note: The class name is case sensitive!
+                         </pre>
+            <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_classes_css" target="_blank">
+                  <h4>The Syntax for a Class</h4>
+            </a>
+            <p>To create a class; write a period (.) character, followed by a class name. Then, define the CSS
+                  properties within curly braces {}:</p>
+
+            <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_classes_multiple" target="_blank">
+                  <h4>Multiple Classes </h4>
+            </a>
+            <p>HTML elements can belong to more than one class.<br>
+
+                  To define multiple classes, separate the class names with a space, e.g. |div class="city main"|. The
+                  element will be styled according to all the classes specified.</p>
+
+            <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_classes_tags" target="_blank">
+                  <h4>Different Elements Can Share Same Class</h4>
+            </a>
+            <p>Different HTML elements can point to the same class name.</p>
+            <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_classes_js" target="_blank">
+                  <h4>Use of The class Attribute in JavaScript</h4>
+            </a>
+            <p>The class name can also be used by JavaScript to perform certain tasks for specific elements.<br>
+
+                  JavaScript can access elements with a specific class name with the<span
+                        style="color:#ff6347;background-color: antiquewhite;"> getElementsByClassName()</span> method:
+            </p>
+            <!--HTML Id Attribute-->
+            <hr>
+            <a href="https://www.w3schools.com/html/html_id.asp" target="_blank">
+                  <h2>HTML Id Attribute</h2>
+            </a>
+            <p>The HTML <strong>id</strong> attribute is used to specifty a unique id for an HTML element.<br>
+                  You cannot have more than one element with the same id in an HTML document.<br>
+                  The <span style="color:#ff6347;background-color: aliceblue;">id</span> attribute is used to point to a
+                  specific style declaration in a style sheet. It is also used by JavaScript to access and manipulate
+                  the element with the specific id.
+
+            </p>
+            <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_id_css" target="_blank">See an
+                  Example.</a>
+            <p style="color: red; background-color: bisque;">
+                  Note: The id name must contain at least one character, cannot start with a number, and must not
+                  contain whitespaces (spaces, tabs, etc.).<br>
+                  Note: The id name is case sensitive!
+            </p>
+
+            <h4>The Syntax for a id</h4>
+
+            <p>The syntax for id is: write a hash character (#), followed by an id name. Then, define the CSS properties
+                  within curly braces {}.:</p>
+
+            <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_id_class" target="_blank">
+                  <h4>Difference Between Class and ID </h4>
+            </a>
+            <p>A class name can be used by multiple HTML elements, while an id name must only be used by one HTML
+                  element within the page:</p>
+
+            <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_id_bookmark" target="_blank">
+                  <h4>HTML Bookmarks with ID and Links</h4>
+            </a>
+            <p>HTML bookmarks are used to allow readers to jump to specific parts of a webpage.<br>
+
+                  Bookmarks can be useful if your page is very long.<br>
+
+                  To use a bookmark, you must first create it, and then add a link to it.<br>
+
+                  Then, when the link is clicked, the page will scroll to the location with the bookmark.</p>
+            <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_id_js" target="_blank">
+                  <h4>Use of The ID Attribute in JavaScript</h4>
+            </a>
+            <p>The id attribute can also be used by JavaScript to perform certain tasks for specific elements.<br>
+
+                  JavaScript can access elements with a specific id with the<span
+                        style="color:#ff6347;background-color: antiquewhite;"> getElementsById()</span> method:
+            </p>
+            <hr>
+            <!--HTML I-Frames-->
+            <a href="https://www.w3schools.com/html/html_iframe.asp" target="_blank">
+                  <h2>HTML Iframes</h2>
+            </a>
+            <p>An HTML iframe is used to display a web page within a web page.</p>
+            <h4>HTML Iframe Syntax</h4>
+            <p>The HTML <span style="color:#ff6347;background-color: aliceblue;">|iframe|</span> tag specifies an inline
+                  frame.
+                  <!--An inline frame is used to embed another document within the current HTML document.-->
+            </p>
+            <pre>
+                        |iframe <span style="color:red;">src</span> = <span style="color:blue">"url" </span><span style="color:red;">title</span> = <span style="color:blue">"description"</span>||/iframe|
+                  </pre>
+            <em><strong>Tip: </strong>It is a good practice to always include "title" attribute for the |iframe|. This
+                  is used by screen readers to read out what the content of the iframe is.</em>
+            <ol>
+                  <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_iframe_height_width"
+                        target="_blank">
+                        <li>Iframe - Set Height and width
+                        </li>
+                  </a>
+                  <p>The hight and width are specified in pixels by default</p>
+                  <pre>
+                        |iframe <span style="color:red;">src</span> = <span style="color:blue">"D:\Full Stack\HTML-Components-Library\index.html" </span><span style="color:red;">title</span> = <span style="color:blue">"Iframe Example"</span>
+                        <span style="color:red;">height</span> = <span style="color:blue">"200"</span>
+                        <span style="color:red;">width</span> = <span style="color:blue">"300"</span>||/iframe|
+                  </pre>
+                  <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_iframe_height_width_css"
+                        target="_blank" style="color: green; text-decoration: none;"><em>You can also use the style
+                              attribute and use the CSS
+                              height and width
+                              properties:</em></a>
+
+                  <!--Iframe Remove the Border-->
+                  <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_iframe_frameborder"
+                        target="_blank">
+                        <li>Iframe - Remove the Border
+                        </li>
+                  </a>
+                  <p>By default, an iframe has a border around it.</p>
+                  <pre>
+      |iframe <span style="color:red;">src</span> = <span style="color:blue">"D:\Full Stack\HTML-Components-Library\index.html" </span><span style="color:red;">title</span> = <span style="color:blue">"Iframe Example"</span>
+      <span style="color:red;">style</span> = <span style="color:blue">"border:none;"</span>|
+     |/iframe|
+</pre>
+                  <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_iframe_border2" target="_blank"
+                        style="color:green; text-decoration: none;"><em>
+                              With CSS, you can also change the size, style and color of the iframe's border:
+                        </em></a>
+
+
+                  <!--Iframe- Target for a Link-->
+                  <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_iframe_target" target="_blank">
+                        <li>Iframe - Target for a link
+                        </li>
+                  </a>
+                  <p>An iframe can be used as the target frame for a link.<br>The <strong>target</strong> attribute of
+                        the link must refer to the <strong>name</strong> attribute of the iframe:</p>
+                  <pre>
+      |iframe <span style="color:red;">src</span> = <span style="color:blue">"D:\Full Stack\HTML-Components-Library\index.html" </span><span style="color:red;">title</span> = <span style="color:blue">"Iframe Example"</span><span style="color:red;">name</span> = <span style="color:blue">"iframe_a"</span>|
+      |/iframe|
+      |iframe <span style="color:red;">href</span> = <span style="color:blue">"url"</span>
+      <span style="color:red;">target</span> = <span style="color:blue">"iframe_a"</span>||/iframe|
+</pre>
+
+            </ol>
+            <img src="images/chapter-summary iframe.jpg" alt="This is a chapter summary">
+
+
+
+
+
+
+
       </body>
 
       </html>
